@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { deleteCard, toggleActive,  } from "../redux/cardSlice";
 import "./ewallet.css";
 
+
 const Ewallet = () => {
   const creditCard = useSelector((state) => state.cardInfo.cardInformation);
 
@@ -16,7 +17,9 @@ const Ewallet = () => {
   };
 
   const deleteHandler = (index) => {
-
+    console.log(creditCard)
+    
+    
    
     if (creditCard.length > 1) {
       if (creditCard[index].cardStateActive === false) {

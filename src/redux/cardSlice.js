@@ -42,8 +42,10 @@ const cardSlice = createSlice({
 
   },
   toggleActive: (state, action) => {
-    console.log("toggling active")
     let newArray = [...state.cardInformation]
+    console.log(newArray)
+
+    
   
     newArray.forEach((i) => {
       i.cardStateActive = false

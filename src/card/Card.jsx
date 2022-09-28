@@ -9,7 +9,8 @@ const cardData = {
   cardMonth: "",
   cardYear: "",
   ccv: "",
-  bankName: ""
+  bankName: "",
+  cardStateActive: false
 };
 
 const Card = () => {
